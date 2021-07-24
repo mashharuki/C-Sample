@@ -89,3 +89,21 @@ class NoteManager{
             m_note = NULL;
         }
 };
+
+/**
+ * メイン関数
+ */
+int main () {
+    // NoteManager型のインスタンスを生成する
+    NoteManager noteManager;
+    // ノート作成
+    noteManager.CreateNote();
+    // 名前を登録する。
+    noteManager.RegisterName();
+    // メッセージを登録する。
+    noteManager.RegisterMsg();
+    // 内容を出力する。
+    noteManager.DisplayNote();
+    // アドレスの解放とメモリ上のデータを削除する。
+    noteManager.DeleteNote();
+}
